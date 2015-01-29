@@ -6,7 +6,8 @@ class Exit
   extend Legato::Model
 
   metrics :exits, :pageviews
-  dimensions :page_path, :operating_system, :browser
+  # dimensions :page_path, :operating_system, :browser
+  # dimensions :page_path
 
   # Filters -------------------------------------------------------------------
   filter :high_exits, &lambda {gte(:exits, 30)}
@@ -25,5 +26,11 @@ end
 #
 # Filter chainging
 # Exit.high_exits.low_pageviews(sa.profile).each {}
+
+# Time stuff
+# sa.profile.exit.results(start_date: Time.now - 2.days).each {}.count
+
+
+# TODO: offsets for > 1000 results
 
 binding.pry
