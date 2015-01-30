@@ -27,10 +27,10 @@ class ServiceAccount
 
   def new_access_token
     scope = "https://www.googleapis.com/auth/analytics.readonly"
-    email = "400474684363-2pf5val9c3jq52up3utf3lkr7ulkita5@developer.gserviceaccount.com"
+    email = "889187142079-4a2smoq1l93ugp1upfh92frqjdq78bcf@developer.gserviceaccount.com"
 
     # TODO: where to keep this safe?
-    pk_filename = "#{Dir.home}/Desktop/Analytics Reporting-df2964f820a6.p12"
+    pk_filename = "#{Dir.home}/Desktop/Cronkite-d506a8a5c642.p12"
 
     client = Google::APIClient.new(
       application_name: "Analytics Reporting",
